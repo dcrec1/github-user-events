@@ -17,6 +17,13 @@ module 'Acceptance: Events',
   afterEach: ->
     Ember.run application, 'destroy'
 
+test 'visiting /', (assert) ->
+  visit '/'
+  fillIn('#username_input', 'dcrec1')
+  click('form button')
+  andThen ->
+    assert.ok $(".events li").html().indexOf("ago") > -1
+
 test 'visiting /:username', (assert) ->
   visit '/dcrec1'
   andThen ->
