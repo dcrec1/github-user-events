@@ -1,6 +1,6 @@
-%ol.events
+ol.events
   each event in controller
-    %li
+    li
       = component event.eventType event=event.model
 
 = outlet

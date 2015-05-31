@@ -22,9 +22,9 @@ test 'visiting /', (assert) ->
   fillIn('#username_input', 'dcrec1')
   click('form button')
   andThen ->
-    assert.ok $(".events li").html().indexOf("ago") > -1
+    assert.ok $(".events").html().indexOf("ago") > -1
 
 test 'visiting /:username', (assert) ->
   visit '/dcrec1'
   andThen ->
-    assert.ok $(".events li").html().indexOf("ago") > -1
+    assert.ok $(".events").html().indexOf("ago") > -1
