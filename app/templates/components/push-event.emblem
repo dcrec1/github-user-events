@@ -1,0 +1,7 @@
+| pushed #{event.payload.size} commit(s) to 
+a href="https://github.com/{{event.repo.name}}" {{event.repo.name}}
+span.ago= ago event.created_at
+ul.commits
+  = each commit in event.payload.commits
+    li
+      a href=commit.url {{commit.message}}
