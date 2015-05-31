@@ -1,23 +1,21 @@
----
 language: node_js
 node_js:
-  - "0.12"
-
+- '0.12'
 sudo: false
-
 cache:
   directories:
-    - node_modules
-
+  - node_modules
 before_install:
-  - export PATH=/usr/local/phantomjs-2.0.0/bin:$PATH
-  - "npm config set spin false"
-  - "npm install -g npm@^2"
-
+- export PATH=/usr/local/phantomjs-2.0.0/bin:$PATH
+- npm config set spin false
+- npm install -g npm@^2
 install:
-  - npm install -g bower
-  - npm install
-  - bower install
-
+- npm install -g bower
+- npm install
+- bower install
 script:
-  - npm test
+- npm test
+- bash ./deploy.sh
+env:
+  global:
+    secure: LiYZ7M8CfrDjKdz8teRVS0IgSwRPblOoggM8yeKDmz7VLWqqgDN0LHj+bs4Io5aGU4NtgOwka/I7O0CtTFkOy9INYxVwn+18GeQzIBIsTooGJkiO5MTHsJ5qWsY59mP0kFENIDYdMFGQQBamf6cU5ePqchy22hXi8jgXiVENne1zyeaGVKJwfzXDhs4c5nog1xo3T1e6Ukae8NRXyfsdRIA+5SV3AsZvo4San6BYDwkH8CtViEQ8R5Ndo2eiMhWJPcoznSasNlGQkRu+QXmAjzgojTIp/+3l4S11x+9cUu9bPALquCv4lndqTgzxSq/4fHJ6j+nQWQSDG/p4q/n2W1vjOFuZBAOQ1mWqTTrlCdWn1HmweMoLnU8GX6nUMuQ9IrGHLz5uhENUKGeBCEGxR5VAzU0QDPwFK2Z0eKhmTpyY0OOWpCGSsIRaFO1wNfTlEuqI8MYB927fWBeizv+J59QAa9wARpZcawsKJVz4YS74FjdmzyakFxBBa5WPeerbUeAlViS3IQHW5GTKORvMSodUtUPHO09718n24UHySnPqLqkyy9ajBdIfQMD14M/6QSB5js9+l1WXCU1vKBZpHU4FXibCiMZWGNE/HOQbo7jk5n2nr7rzvBUKk9/8ot4Ci6dkPJCOTZs0Aw61vtSTZlivIfsiUqrLcUpPVg0YbCk=
