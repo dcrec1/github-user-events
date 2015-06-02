@@ -4,4 +4,4 @@ span.ago= ago event.created_at
 ul.commits
   = each commit in event.payload.commits
     li
-      a href=commit.url {{commit.message}}
+      a href="https://github.com/#{event.repo.name}/commit/#{commit.sha}" {{commit.message}}

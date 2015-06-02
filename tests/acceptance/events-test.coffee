@@ -28,4 +28,4 @@ test 'visiting /', (assert) ->
 test 'visiting /:username', (assert) ->
   visit '/dcrec1'
   andThen ->
-    assert.ok $(".events").html().indexOf("ago") > -1
+    assert.equal $(".events .commits a").attr("href"), "https://github.com/dcrec1/test/commit/c06117308532c2c09b19e45d059798a109fbb8eb"
