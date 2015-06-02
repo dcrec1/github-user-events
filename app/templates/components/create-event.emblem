@@ -1,0 +1,6 @@
+| created #{event.payload.ref_type} 
+if event.payload.ref
+  a href="https://github.com/{{event.repo.name}}/tree/{{event.repo.ref}}" {{event.payload.ref}} 
+  | at 
+a href="https://github.com/{{event.repo.name}}" {{event.repo.name}} 
+span.ago= ago event.created_at
