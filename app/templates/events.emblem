@@ -1,8 +1,8 @@
 h2 {{model.0.actor.login}}
 
-ol.events
+ol.events.list-group
   each event in controller
-    li
+    li.list-group-item
       = component event.eventType event=event.model
 
 = outlet
