@@ -23,6 +23,7 @@ test 'visiting /', (assert) ->
   click('form button')
   andThen ->
     assert.ok $(".events").html().indexOf("ago") > -1
+    assert.notEqual $(".ago").html(), "a few seconds ago"
     assert.ok $("#username_input").size() > 0
 
 test 'visiting /:username', (assert) ->
