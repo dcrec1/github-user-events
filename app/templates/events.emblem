@@ -3,7 +3,7 @@ h2 {{model.0.actor.login}}
 ol.events.list-group
   each event in controller
     li.list-group-item
-      span.ago= ago event.created_at
+      span.small.ago= ago event.created_at
       = component event.eventType event=event.model
 
 = outlet
