@@ -5,4 +5,5 @@
   else
     | issue 
   a href="{{event.payload.comment.html_url}}" #{event.repo.name}##{event.payload.issue.number}
-.body= event.payload.comment.body
+.body
+  | {{truncate-text event.payload.comment.body limit=150}}
