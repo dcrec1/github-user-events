@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/dcrec1/github-user-events.svg?branch=master)](https://travis-ci.org/dcrec1/github-user-events)
+
 # Github-user-events
 
 This README outlines the details of collaborating on this Ember application.
