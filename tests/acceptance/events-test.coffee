@@ -29,8 +29,8 @@ test 'visiting /:username', (assert) ->
   visit '/dcrec1'
   andThen ->
     assert.equal $(".events .commits a").attr("href"), "https://github.com/dcrec1/test/commit/c06117308532c2c09b19e45d059798a109fbb8eb"
-    assert.equal $(".events > li:eq(2)").text(), "created branch master at dcrec1/test 2 hours ago"
-    assert.equal $(".events > li:eq(3)").text(), "created repository dcrec1/test 3 hours ago"
+    assert.equal $(".events > li:eq(2) .title").text(), "created branch master at dcrec1/test", 
+    assert.equal $(".events > li:eq(3) .title").text(), "created repository dcrec1/test", 
 
 test 'renders comments', (assert) ->
   visit '/dhh'

@@ -1,3 +1,3 @@
-| starred 
-a href="https://github.com/{{event.repo.name}}" {{event.repo.name}}
-span.ago= ago event.created_at
+.title
+  | starred 
+  a href="https://github.com/{{event.repo.name}}" {{event.repo.name}}
