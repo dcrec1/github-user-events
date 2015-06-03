@@ -1,0 +1,8 @@
+.title
+  | commented on 
+  if event.payload.issue.pull_request
+    | pull request 
+  else
+    | issue 
+  a href="{{event.payload.comment.html_url}}" #{event.repo.name}##{event.payload.issue.number}
+.body= event.payload.comment.body
