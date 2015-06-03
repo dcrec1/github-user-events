@@ -1,3 +1,5 @@
+h2 {{model.0.actor.login}}
+
 ol.events
   each event in controller
     li

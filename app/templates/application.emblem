@@ -1,3 +1,7 @@
 .container
   h1 GitHub User Events
+
+  em-form action="fetchEvents"
+    = em-input label="Username" cid="username_input"
+
   = outlet

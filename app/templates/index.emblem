@@ -1,4 +1,0 @@
-em-form action="fetchEvents"
-  = em-input label="Username" cid="username_input"
-
-= outlet
