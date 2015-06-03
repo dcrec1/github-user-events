@@ -1,5 +1,5 @@
 .title
-  | pushed #{event.payload.size} commit(s) to 
+  | pushed #{h-pluralize event.payload.size "commit"} to 
   a href="https://github.com/{{event.repo.name}}" {{event.repo.name}}
 ul.commits
   = each commit in event.payload.commits
