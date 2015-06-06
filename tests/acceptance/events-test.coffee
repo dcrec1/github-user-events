@@ -47,3 +47,4 @@ test 'renders pull requests', (assert) ->
   visit '/gitter-badger'
   andThen ->
     assert.equal $(".events > li:eq(0) .title").text(), "opened pull request yoursiteissucks/yoursiteissucks.github.io#1"
+    assert.equal $(".events > li:eq(0) .pull-info").text(), "1 commit with 2 additions and 0 deletions"

@@ -4,4 +4,4 @@
 .body
   = event.payload.pull_request.title
 .pull-info.label.label-default
-  | #{h-pluralize event.payload.pull_request.commit "commit"} with #{h-pluralize event.payload.pull_request.aditions "addition"} and #{h-pluralize event.payload.pull_request.deletions "deletion"}
+  | #{h-pluralize event.payload.pull_request.commits "commit"} with #{h-pluralize event.payload.pull_request.additions "addition"} and #{h-pluralize event.payload.pull_request.deletions "deletion"}
