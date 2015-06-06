@@ -1,7 +1,7 @@
 export default function(server) {
 
 server.respondWith( 'GET', 
-'https://api.github.com/users/dcrec1/events',
+'https://api.github.com/users/dcrec1/events?page=1',
   [
  200,
 {"X-RateLimit-Remaining":"55","Last-Modified":"Mon, 01 Jun 2015 18:22:23 GMT","X-Poll-Interval":"60","ETag":"W/\"bdff15a19e90d1e5f77870bc99680f7f\"","Content-Type":"application/json; charset=utf-8","Cache-Control":"public, max-age=60, s-maxage=60","X-RateLimit-Reset":"1433215588","X-RateLimit-Limit":"60","Link":"<https://api.github.com/user/13742/events?page=2>; rel=\"next\", <https://api.github.com/user/13742/events?page=5>; rel=\"last\""},
@@ -9,7 +9,7 @@ server.respondWith( 'GET',
 ]);
 
 server.respondWith( 'GET', 
-'https://api.github.com/users/dhh/events',
+'https://api.github.com/users/dhh/events?page=1',
   [
  200,
 {"X-RateLimit-Remaining":"58","Last-Modified":"Tue, 02 Jun 2015 03:43:51 GMT","X-Poll-Interval":"60","ETag":"W/\"357e636ee22a154e021eac9099c97687\"","Content-Type":"application/json; charset=utf-8","Cache-Control":"public, max-age=60, s-maxage=60","X-RateLimit-Reset":"1433302386","X-RateLimit-Limit":"60","Link":"<https://api.github.com/user/2741/events?page=2>; rel=\"next\", <https://api.github.com/user/2741/events?page=10>; rel=\"last\""},
