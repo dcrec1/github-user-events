@@ -40,4 +40,5 @@ test 'renders comments', (assert) ->
     assert.equal $(".events > li:eq(0) .title").text(), "commented on issue rails/rails#20338"
     assert.equal $(".events > li:eq(1) .title").text(), "commented on pull request rails/rails#20362"
     assert.equal $(".events > li:eq(8) .title").text(), "reviewed pull request rails/rails#19832"
+    assert.equal $(".events > li:eq(13) .title").text(), "opened issue rails/rails#20361"
 

@@ -1,0 +1,5 @@
+.title
+  | opened issue 
+  a href="{{event.payload.issue.html_url}}" #{event.repo.name}##{event.payload.issue.number}
+.body
+  event.payload.issue.title
