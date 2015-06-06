@@ -1,0 +1,5 @@
+.title
+  | reviewed pull request 
+  a href="{{event.payload.comment.html_url}}" #{event.repo.name}##{event.payload.pull_request.number}
+.body
+  | {{truncate-text event.payload.comment.body limit=150}}
