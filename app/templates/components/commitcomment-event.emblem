@@ -1,0 +1,5 @@
+.title
+  | commented on commit 
+  a href="{{event.payload.comment.html_url}}" #{event.repo.name}@#{truncate-text event.payload.comment.commit_id limit=10 points=false}
+.body
+  | {{truncate-text event.payload.comment.body limit=150}}
