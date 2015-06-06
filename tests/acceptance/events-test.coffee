@@ -43,3 +43,7 @@ test 'renders comments', (assert) ->
     assert.equal $(".events > li:eq(13) .title").text(), "opened issue rails/rails#20361"
     assert.equal $(".events > li:eq(24) .title").text(), "commented on commit rails/rails@6c55cffa5b"
 
+test 'renders pull requests', (assert) ->
+  visit '/gitter-badger'
+  andThen ->
+    assert.equal $(".events > li:eq(0) .title").text(), "opened pull request yoursiteissucks/yoursiteissucks.github.io#1"

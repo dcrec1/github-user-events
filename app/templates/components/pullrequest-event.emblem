@@ -1,0 +1,7 @@
+.title
+  | #{event.payload.action} pull request 
+  a href=event.payload.pull_request.html_url #{event.repo.name}##{event.payload.pull_request.number}
+.body
+  = event.payload.pull_request.title
+.pull-info.label.label-default
+  | #{h-pluralize event.payload.pull_request.commit "commit"} with #{h-pluralize event.payload.pull_request.aditions "addition"} and #{h-pluralize event.payload.pull_request.deletions "deletion"}
