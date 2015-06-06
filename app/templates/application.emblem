@@ -1,7 +1,14 @@
 .container
-  h1 GitHub User Events
+  nav.navbar.navbar-default
+    .container-fluid
+      .navbar-header
+        a.navbar-brand GitHub User Events
 
-  em-form action="fetchEvents"
-    = em-input label="Username" cid="username_input"
+      em-form action="fetchEvents" form_layout="inline" class="navbar-form navbar-left"
+        = em-input cid="username_input" placeholder="Username"
+
+      ul.nav.navbar-nav.navbar-right
+        li
+          a href="https://github.com/dcrec1/github-user-events" Source
 
   = outlet
