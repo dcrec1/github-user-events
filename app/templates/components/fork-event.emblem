@@ -1,0 +1,5 @@
+.title
+  | forked 
+  a href="http://github.com/#{event.repo.name}" #{event.repo.name} 
+  | to 
+  a href=event.payload.forkee.html_url #{event.payload.forkee.full_name}
