@@ -2,7 +2,7 @@
   nav.navbar.navbar-default
     .container-fluid
       .navbar-header
-        a.navbar-brand GitHub User Events
+        a.navbar-brand github user events
 
       em-form action="fetchEvents" form_layout="inline" class="navbar-form navbar-left"
         = em-input cid="username_input" placeholder="Username"
